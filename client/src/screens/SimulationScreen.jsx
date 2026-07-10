@@ -3,8 +3,8 @@ import UnderstandingScore from '../components/UnderstandingScore';
 import SimulationScene from '../components/SimulationScene';
 import { learningLedger } from '../ai/blockchain';
 
-// Empty string means same-origin (used when deployed on Vercel full-stack)
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL ?? 'http://localhost:5000';
+// In dev: use localhost. In production (Vercel): use same-origin empty string.
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL ?? (import.meta.env.DEV ? 'http://localhost:5000' : '');
 
 const WORLD_SUGGESTIONS = {
   EN: {
