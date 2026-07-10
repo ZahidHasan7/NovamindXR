@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaMind XR - Student Dashboard</title>
+    <!-- Outfit Font from Google Fonts for premium tech aesthetics -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        box-sizing: border-box;
+        /* Firefox scrollbar support */
+        scrollbar-width: thin;
+        scrollbar-color: rgba(59, 130, 246, 0.3) rgba(10, 10, 26, 0.45);
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+      }
+      body {
+        background-color: #030308;
+        color: #f8fafc;
+        font-family: 'Outfit', sans-serif;
+      }
+      /* Custom Webkit Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(10, 10, 26, 0.45);
+        border-radius: 8px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, rgba(59, 130, 246, 0.3) 0%, rgba(99, 102, 241, 0.3) 100%);
+        border-radius: 8px;
+        border: 1px solid rgba(59, 130, 246, 0.15);
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg, rgba(59, 130, 246, 0.6) 0%, rgba(99, 102, 241, 0.6) 100%);
+        border: 1px solid rgba(59, 130, 246, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
